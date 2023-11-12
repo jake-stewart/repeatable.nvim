@@ -18,7 +18,7 @@ vim.keymap.set({"n", "v"}, "gp", repeatable("P`["), {expr = true})
 
 
 ### operator mapping
-you can provide `op = true` to make the mapping await an operator (the `iw` of `diw`).
+you can provide `op = true` to make the mapping await a motion.
 there is also `remap = false`, which is default, but provided for demonstration.
 
 ```lua
