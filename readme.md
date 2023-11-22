@@ -30,7 +30,7 @@ vim.keymap.set({"n", "v"}, "~", repeatable("~", {op = true, remap = false}), {ex
 vim.keymap.set({"n", "v"}, "~", repeatable(function(o)
     print(o.motion) -- "char", "line", or "block". (see :h g@)
     print(o.count)  -- number (see :h v:count)
-    print(o.count)  -- string: the mode when user called this mapping (see :h mode())
+    print(o.mode)    -- string: the mode when user called this mapping (see :h mode())
     print(o.op)     -- boolean: whether `op = true` was provided for this mapping
     print(o.remap)  -- boolean: whether `remap = true` was provided for this mapping
 end, {op = true, remap = false}), {expr = true})
